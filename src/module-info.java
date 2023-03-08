@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author aissa
+ *
+ */
+module library {
+}
