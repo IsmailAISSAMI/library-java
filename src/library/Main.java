@@ -89,6 +89,8 @@ public class Main {
         displayBookCharacteristics(pocketBook);
 
         System.out.println("********** thank you for using my library **********");
+
+        scanner.close();
     }
     
 }
