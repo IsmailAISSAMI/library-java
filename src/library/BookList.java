@@ -27,7 +27,7 @@ public class BookList {
     }
 
     // Question 3.a.5
-    public void removeBook(String authorFirstName, String authorLastName,String category, int isbn) {
+    public void removeBook(String authorFirstName, String authorLastName,Book.Category category, int isbn) {
         for (Book book : list.values()) {
             if (book.getAuthorFirstName().equals(authorFirstName) && book.getAuthorLastName().equals(authorLastName) && book.getCategory().equals(category) && book.getIsbn() == isbn) {
                 list.remove(book.getRegistrationCode());
@@ -45,6 +45,11 @@ public class BookList {
             book.displayBook();
             //System.out.println(book);
         }
+    }
+
+    public void displayBook(String registrationCode) {
+        System.out.println("[INFO] Book with registration code " + registrationCode + ":");
+        list.get(registrationCode).displayBook();
     }
     
 }

@@ -18,13 +18,22 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String authorFirstName,String authorLastName,Category category,  int isbn  , String registrationCode) {
+    // public Book(String title, String authorFirstName,String authorLastName,Category category,  int isbn  , String registrationCode) {
+    //     this.title = title;
+    //     this.authorFirstName = authorFirstName;
+    //     this.authorLastName = authorLastName;
+    //     this.category = category;
+    //     this.isbn = isbn;
+    //     this.registrationCode = registrationCode;
+    // }
+
+    public Book(String title, String authorFirstName,String authorLastName,Category category,  int isbn ) {
         this.title = title;
         this.authorFirstName = authorFirstName;
         this.authorLastName = authorLastName;
         this.category = category;
         this.isbn = isbn;
-        this.registrationCode = registrationCode;
+        setRegistrationCode();
     }
 
     //GETTERS
