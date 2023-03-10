@@ -115,9 +115,11 @@ public class Book {
 
     public void displayBook() {
         System.out.println("Book = {\n" + "\tTitle=" + title + ",\n\tAuthor firstName=" + authorFirstName + ",\n\tAuthor lastName=" + authorLastName + ",\n\tCategory=" + category + ",\n\tISBN=" + isbn + ",\n\tregistration code=" + registrationCode + "\n}");
-    }
+    } 
 
-    
-    
+    // Second method for question 2.F
+    public void displayOnlyTitleAndCode() {
+        System.out.println("Book = {\n" + "\tTitle=" + title + ",\n\tregistration code=" + registrationCode + "\n}");
+    }
     
 }

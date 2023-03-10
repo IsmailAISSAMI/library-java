@@ -30,10 +30,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // test class Book
-        Book book = new Book("The Lord of the Rings", "J.R.R.", "Tolkien", Book.Category.NOVEL, 123456789, "ABC123");
-        System.out.println(book);
-
         // Question 1.b        
         Book pocketBook = new Book();
 
@@ -87,6 +83,17 @@ public class Main {
 
         // Question 2.B:
         displayBookCharacteristics(pocketBook);
+
+        // Question 2.F:
+        System.out.println("[INFO] The question 2.f");
+
+        System.out.println("-First method-");
+        System.out.println("The title of the pocket book is: "+ pocketBook.getTitle());
+        System.out.println("The code of the pocket book is: "+ pocketBook.getRegistrationCode());
+        
+        System.out.println("-Second method-");
+        pocketBook.displayOnlyTitleAndCode();
+
 
         System.out.println("********** thank you for using my library **********");
 
