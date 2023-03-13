@@ -13,6 +13,7 @@ public class BookList {
     // Question 3.a.3
     public void addBook(Book newBook) {
         list.put(newBook.getRegistrationCode(), newBook);
+        System.out.println("The book -"+newBook.getTitle()+"- has been added to the library.");
     }
 
     // Question 3.a.4
@@ -35,7 +36,7 @@ public class BookList {
                 return;
             }
         }
-        System.out.println("The book is not in the library.");
+        System.out.println("The book you have searched for does not exist in the library.");
     }
 
     // Question 3.a.6
@@ -50,6 +51,16 @@ public class BookList {
     public void displayBook(String registrationCode) {
         System.out.println("[INFO] Book with registration code " + registrationCode + ":");
         list.get(registrationCode).displayBook();
+    }
+
+    //search for a book by its title
+    public Book searchBookByTitle(String title) {
+        for (Book book : list.values()) {
+            if (book.getTitle().equals(title)) {
+                return book;
+            }
+        }
+        return null;
     }
     
 }
